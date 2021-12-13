@@ -10,17 +10,13 @@ pipeline {
         }
         stage('Test') {
             steps {
-                //
+                sh "echo test page"
             }
         }
-        stage('Create Schema') {
-            steps {
-                //
-            }
-        }
+    
         stage('Run') {
             steps {
-                //
+                sh "echo test page"
             }
         }
     }
