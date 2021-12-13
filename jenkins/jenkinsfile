@@ -1,9 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Setup') {
             steps {
-                //
+                sh "mkdir newdir"
+                sh "cd newdir"
+                sh "touch newfile"
             }
         }
         stage('Test') {
@@ -11,7 +13,12 @@ pipeline {
                 //
             }
         }
-        stage('Deploy') {
+        stage('Create Schema') {
+            steps {
+                //
+            }
+        }
+        stage('Run') {
             steps {
                 //
             }
